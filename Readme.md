@@ -17,26 +17,146 @@ This project provides a web scraper for cryptocurrency data from CoinMarketCap. 
 
 
 
-![Alt text](home.png)
 
 ## Testing
+![Alt text](postman.png)
+![Alt text](postman2.png)
+
 <h2> API responses </h2>
 
-<h3> Authentication </h3>
 
-<b>User Registration</b> 
+<b>Input Crypto Coins</b> 
 ```json
 {
- "token": {
-"refresh": "ey.JhbGc101JIUzI1NilsInR5cCI6IkpXVCJ9.eyJ0b2t1b190eXBlIjoicmVmcmVzaCIsImV4cCI6MTcxMzgwNDYwMywiaWF0IjoxNzEzNzE4MjAzLCJqdGk101I4MTA1MjVhZTJhN2Q0Yjg5ODYzMzQ3ZGFmYzU5Zjc4ZiIsInVzZXJfaWQ10jd9.Ygzn3pYBgZ0FNLV5j4U33_n10_qu1JUFwkigtUQN93k",
-"access":
-"ey.Jhbüc101JIUzI1NiIsInR5cCI6IkpXVC39.eyJ8b2t1b190eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzEzNzIwNjAzLC3pYXQ10jE3MTM3MTgyMDMsImp@a5161jFjMDc2Nzhh0WF1MzRhZjRhZjJk0GY1ZThmNjg0MTg5IiwidXNlc19pZCI6N38. X43R13XTxvpKTkR3eMNLaPxgaL152VgBfDG5FcMEq5g"
+"coins":["DUKO", "NOT", "Gorilla"]
+}
+```
+<b>Job id Generated</b> 
+```json
+{
+    "job_id": "e5ec9684-4ac5-4dbc-ae93-38cf01f6b37e"
+}
+```
+<b>Comprehensive Data</b> 
 
-"msg": "Registration Success"
- }
+```json
+{
+    "job_id": "e5ec9684-4ac5-4dbc-ae93-38cf01f6b37e",
+    "tasks": [
+        {
+            "id": 49,
+            "coin": "DUKO",
+            "price": "0.004766",
+            "price_change": "18.25",
+            "market_cap": "46,057,761",
+            "market_cap_rank": "662",
+            "volume": "12405275.0",
+            "volume_rank": "394",
+            "volume_change": "26.93",
+            "circulating_supply": "9,663,955,990",
+            "total_supply": "9,999,609,598",
+            "diluted_market_cap": "47657463",
+            "contracts": [
+                {
+                    "name": "Solana: ",
+                    "address": "HLptm5e6rTgh4EKgDpYFrnRHbjpkMyVdEeREEa2G7rf9"
+                }
+            ],
+            "official_links": [
+                {
+                    "name": "Website",
+                    "link": "https://dukocoin.com/"
+                }
+            ],
+            "socials": [
+                {
+                    "name": "𝕏Twitter",
+                    "link": "https://twitter.com/dukocoin"
+                },
+                {
+                    "name": "Telegram",
+                    "link": "https://t.me/+jlScZmFrQ8g2MDg8"
+                }
+            ]
+        },
+        {
+            "coin": "NOT",
+            "output": "-"
+        },
+        {
+            "coin": "Gorilla",
+            "output": "-"
+        }
+    ]
 }
 ```
 
+```json
+{
+"coins":["bitcoin","NOT","XRP"]
+
+}
+```
+
+```json
+{
+    "job_id": "e7ecb7e6-9c96-414a-805b-9efff7cdee75",
+    "tasks": [
+        {
+            "id": 59,
+            "coin": "XRP",
+            "price": "0.4952",
+            "price_change": "5.95",
+            "market_cap": "27,484,991,692",
+            "market_cap_rank": "7",
+            "volume": "2153525975.0",
+            "volume_rank": "8",
+            "volume_change": "7.84",
+            "circulating_supply": "55,506,158,411",
+            "total_supply": "99,987,553,871",
+            "diluted_market_cap": "49517013028",
+            "contracts": [
+                {
+                    "name": "BNB Smart Chain (BEP20): ",
+                    "address": "0x1d2f0da169ceb9fc7b3144628db156f3f6c60dbe"
+                }
+            ],
+            "official_links": [
+                {
+                    "name": "Website",
+                    "link": "https://xrpl.org/"
+                },
+                {
+                    "name": "Whitepaper",
+                    "link": "https://ripple.com/files/ripple_consensus_whitepaper.pdf"
+                },
+                {
+                    "name": "GitHub",
+                    "link": "https://github.com/ripple/rippled"
+                }
+            ],
+            "socials": [
+                {
+                    "name": "𝕏Twitter",
+                    "link": "https://twitter.com/Ripple"
+                },
+                {
+                    "name": "Reddit",
+                    "link": "https://reddit.com/r/ripple"
+                }
+            ]
+        },
+        {
+            "coin": "bitcoin",
+            "output": "-"
+        },
+        {
+            "coin": "NOT",
+            "output": "-"
+        }
+    ]
+}
+```
 ## Table of Contents
 
 - [Installation](#installation)
