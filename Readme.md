@@ -19,7 +19,11 @@ This project provides a web scraper for cryptocurrency data from CoinMarketCap. 
 
 
 ## Testing
+<b>Scraping</b> 
+
 ![Alt text](postman.png)
+<b>Response</b> 
+
 ![Alt text](postman2.png)
 
 <h2> API responses </h2>
